@@ -1,0 +1,60 @@
+<html>
+<head>
+<script type="text/javascript">
+function add()
+{
+
+var n1=parseInt(document.cal.num1.value);
+var n2=parseInt(document.cal.num2.value);
+//document.write(n1+n2);
+var n3 = n1 + n2;
+
+document.cal.num3.value=n3;
+}
+
+function sub()
+{
+
+var n1=parseInt(document.cal.num1.value);
+var n2=parseInt(document.cal.num2.value);
+//document.write(n1+n2);
+var n3 = n1 - n2;
+
+document.cal.num3.value=n3;
+}
+function dev()
+{
+
+var n1=parseInt(document.cal.num1.value);
+var n2=parseInt(document.cal.num2.value);
+//document.write(n1+n2);
+var n3 = n1 / n2;
+
+document.cal.num3.value=n3;
+}
+function mul()
+{
+
+var n1=parseInt(document.cal.num1.value);
+var n2=parseInt(document.cal.num2.value);
+//document.write(n1+n2);
+var n3 = n1 * n2;
+
+document.cal.num3.value=n3;
+}
+
+
+</script>
+<body>
+<form name="cal">
+num1<input type="text" name="num1"><br>
+num2<input type="text" name="num2"><br>
+num3<input type="text" name="num3"><br>
+<input type="button" value="add" onClick="add()"><br>
+<input type="button" value="sub" onClick="sub()"><br>
+<input type="button" value="dev" onClick="dev()"><br>
+<input type="button" value="mul" onClick="mul()"><br>
+</form>
+
+</body>
+</html>
